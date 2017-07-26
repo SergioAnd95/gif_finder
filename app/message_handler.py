@@ -20,7 +20,7 @@ def create_answer(obj):
         pass
 
     session = mongo.db.bot_session.find_one({'_id':str(obj['user_id'])})
-    message = obj['body']
+    message = obj['body'].lower()
     msg = ''
     attachment = ''
     for c in command_list:
