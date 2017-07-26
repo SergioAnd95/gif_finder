@@ -3,7 +3,6 @@ from .api import find_random_gif
 
 from app import mongo
 
-import json
 
 # Command for start search
 start_search_command = Command('поиск', 'Поиск гифок')
