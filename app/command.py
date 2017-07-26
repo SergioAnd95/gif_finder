@@ -18,7 +18,7 @@ class Command:
 
     @keys.setter
     def keys(self, lst):
-        self.__keys.append([i.lower() for i in lst])
+        self.__keys += [i.lower() for i in lst]
 
     def process(self, obj):
         # Function to handle message
